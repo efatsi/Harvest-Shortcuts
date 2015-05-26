@@ -1,12 +1,12 @@
 $(document).keydown(function(e) {
-  if ($(".modal-overlay.hidden").length > 0) {
-    // j
-    if (e.keyCode == 74) {
+  if ($(".modal-overlay").length == 0 || $(".modal-overlay.hidden").length > 0) {
+    // k
+    if (e.keyCode == 75) {
       $(".js-harvest-current-view").find(".js-jump-one-day-back")[0].click()
     }
 
-    // k
-    else if (e.keyCode == 75) {
+    // j
+    else if (e.keyCode == 74) {
       $(".js-harvest-current-view").find(".js-jump-one-day-forward")[0].click()
     }
 
